@@ -5,7 +5,7 @@ export default function App() {
   return (
     <div>
       <Header></Header>
-      <div className="header">我是header不带样式</div>
+      <div className='header'>我是header不带样式</div>
     </div>
   );
 }
