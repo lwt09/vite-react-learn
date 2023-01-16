@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint:script": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet ./",
+    "lint:script": "eslint --ext .js,.jsx,.ts,.tsx --fix --quiet --ignore-path .gitignore ./",
     "lint": "npm run lint:script",
     "postinstall": "husky install"
   },
@@ -35,6 +35,7 @@
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
     "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-svgr": "^2.4.0"
   },
   "lint-staged": {
@@ -42,5 +43,8 @@
       "npm run lint:script",
       "git add ."
     ]
+  },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
   }
 }
