@@ -19,7 +19,8 @@
     "paths": {
       "@/*": ["src/*"],
       "@assets/": ["src/assets/*"]
-    }
+    },
+    "types": ["vite-plugin-svgr/client"]
   },
 
   "include": ["src"],

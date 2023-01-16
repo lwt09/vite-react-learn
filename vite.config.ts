@@ -8,9 +8,12 @@ import postCssPresetEnv from 'postcss-preset-env';
 // eslint
 import viteEslint from 'vite-plugin-eslint';
 
+// svg
+import svgr from 'vite-plugin-svgr';
+
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), viteEslint()],
+  plugins: [react(), viteEslint(), svgr()],
   css: {
     postcss: {
       plugins: [postCssPresetEnv()],
