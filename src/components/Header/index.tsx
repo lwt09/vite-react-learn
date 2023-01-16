@@ -7,8 +7,11 @@ import TestImg from '@assets/test.jpg';
 // 引入svg
 import { ReactComponent as ReactLogo } from '@assets/React.svg';
 
+// 引入json
+import version from '../../../package.json';
+
 export default function App() {
-  console.log('test5');
+  console.log(version);
   return (
     <>
       <div className='header'>我是header</div>
