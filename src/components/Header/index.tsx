@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './header.scss';
 
 // 引入图片资源
@@ -10,8 +10,13 @@ import { ReactComponent as ReactLogo } from '@assets/React.svg';
 // 引入json
 import version from '../../../package.json';
 
-export default function App() {
-  console.log(version);
+export default function Header() {
+  useEffect(() => {
+    console.log(version);
+    // browser 打印环境变量
+    console.log('import', import.meta.env.VITE_BASE_URL);
+  }, []);
+
   return (
     <>
       <div className='header'>我是header</div>
