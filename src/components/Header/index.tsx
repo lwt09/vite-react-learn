@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <>
       <div className='header'>我是header</div>
-      <img src={TestImg} alt='' />
+      <img src={TestImg} />
       <ReactLogo></ReactLogo>
     </>
   );
